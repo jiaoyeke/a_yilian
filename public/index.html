@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>welcome to a.yilian</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <div id="header">
+    </div>
+    <div id="main">
+        <div id="carousel">
+            <!-- <a class="carousel-item active" href="#">
+                <img src="img/index/index/carousel/banner1.jpg" alt="">
+            </a>
+            <a class="carousel-item" href="#">
+                <img  src="img/index/index/carousel/banner2.jpg" alt="">
+            </a>
+            <a class="carousel-item" href="#">
+                <img src="img/index/index/carousel/banner3.jpg" alt="">
+            </a>
+            <a class="carousel-item" href="#">
+                <img class="show" src="img/index/index/carousel/banner4.jpg" alt="">
+            </a> 
+            <div class="mask"></div> -->
+        </div>
+        <div id="info">
+            <ul class="clear our">
+                <li><a href="javascript:;">关注我们 : </a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+            <audio src="audio/Annabelle.mp3" autoplay loop></audio>
+            <ul id="music">
+                <li>
+                    <img src="img/index/music_mov.gif" alt="">
+                </li>
+                <li>
+                    <img src="img/index/music.gif" alt="">
+                </li>
+            </ul>
+        </div>
+        <div id="product">
+            <!-- <div class="desc">
+                <a href="products.html"><img src="img/index/index/product/pic_img_1.jpg" alt=""></a>
+            </div>
+            <div class="desc">
+                <a href="products.html"><img src="img/index/index/product/pic_img_2.jpg" alt=""></a>
+                
+            </div>
+            <div class="desc">
+                <a href="products.html"><img src="img/index/index/product/pic_img_3.jpg" alt=""></a>
+                
+            </div> -->
+        </div>
+    </div>
+    <div id="foot" class="clear">
+         <!-- <ul>
+            <li>
+                <a href=""><span>Current</span>品牌关注</a>
+            </li>
+            <li>
+                <a href=""><span>About a.Yilian</span>品牌关注</a>
+            </li>
+            <li>
+                <a href=""><span>Campaigns</span>形象大片</a>
+            </li>
+            <li>
+                <a href=""><span>Fashion Trends </span>潮流汇报</a>
+            </li>
+            <li>
+                <a href=""><span>Promotion</span>品牌活动</a>
+            </li>
+            <li>
+                <a href=""><span>Video</span>宣传视频</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href=""><span>Fashion News</span>时尚新闻</a>
+            </li>
+            <li>
+                <a href=""><span>Update News </span>最新消息</a>
+            </li>
+            <li>
+                <a href=""><span>Lookbook</span>时尚搭配</a>
+            </li>
+            <li>
+                <a href=""><span>Winter Collection</span>冬季系列</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href=""><span>Stores</span>店铺信息</a>
+            </li>
+            <li>
+                <a href=""><span>Contact Us</span>联系我们</a>
+            </li>
+        </ul> -->
+        <!-- <ul>
+            <li>
+                <img src="img/index/sub_logo.gif" alt="">
+            </li>
+        </ul>  -->
+    </div>
+    <div id="footer">
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+        /***********音频播放************* */
+    var music=document.getElementById("music");
+    var audio=document.getElementsByTagName("audio")[0];
+    audio.play();
+    music.onclick=function(){
+      // console.log($(this).children(":first").children());
+      if(audio.paused){
+        audio.play();
+        this.firstElementChild.style.display="block";
+        console.log(123)
+      }else{
+        audio.pause();
+        this.firstElementChild.style.display="none";
+      }
+    }
+    </script>
+</body>
+</html>

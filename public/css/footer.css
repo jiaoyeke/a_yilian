@@ -1,0 +1,19 @@
+#footer{
+    width:100%;
+}
+#cright{
+    width:100%;
+    background:#000;
+    height:35px;
+}
+#cright>h2{
+    width:1200px;
+    margin:0 auto;
+    color:#e1e1e1;
+    font-size:12px;
+    font-weight: normal;
+}
+#cright>h2>:not(:first-child){
+    padding-top:10px;
+}
+   

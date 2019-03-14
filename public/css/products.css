@@ -1,0 +1,78 @@
+#main{
+    width:1200px;
+    background:#fff;
+    padding: 25px;
+    box-sizing: border-box;
+    margin:0 auto;
+}
+#main #products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#main #products>.desc{
+    width:366px;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 6px #ddd;
+    margin-bottom:25px;
+    padding-bottom:20px;
+	background:url("../img/xingxing.png");
+}
+#main #products>.desc>a>img{
+    margin-left:25px;
+    margin-top:25px;
+    width:314px;
+    box-sizing: border-box;
+    transition: all 0.5s linear;
+}
+/* #main #products>.desc>a>img:hover{
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transform:scale(1.1);
+} */
+#main #products>.desc>a>img:hover{
+    border-radius:22%;
+    box-shadow: 0 0 8px 6px #ddd;
+}
+#main #products>.desc>a{
+    border:1px solid transparent;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    width:366px;
+    height:366px;
+}
+
+#main #products>.desc .details  p{
+    color:#000;
+    font-weight: bold;
+    text-align: center;
+    margin:5px;
+    font-family: "Corbel";
+    font-size:18px;
+}
+
+/******分页样式******/
+#main  ul.pagenation{
+    /* border:1px solid red; */
+    width:280px;
+    margin:30px auto;
+}
+#main  ul.pagenation li{
+    float:left;
+    /* margin:10px 10px; */
+    width:40px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#main  ul.pagenation li.active{
+    background: #f1c4c5;
+}
+#main  ul.pagenation li.disabled{
+    opacity:0.5;
+}
+

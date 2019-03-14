@@ -1,0 +1,190 @@
+div#box{
+    /* border:1px solid #ddd; */
+    width:960px;
+    height:460px;
+    margin:0 190px;
+    position:relative;
+    top:0;
+    left:0; 
+    
+}
+div#box>div{
+    position: absolute;
+    top:0;
+    background-image: url("../img/current/banner/banner1.jpg"); 
+    background-repeat: no-repeat;
+    width:120px;
+    height:460px;
+    z-index: 10;
+}
+div#box>div:first-child{
+    left:0px;
+    background-position:0px 0;
+}
+div#box>div:nth-child(2){
+    left:120px;
+    background-position:-120px 0;
+}
+div#box>div:nth-child(3){
+    left:240px;
+    background-position:-240px 0;
+}
+    div#box>div:nth-child(4){
+        left:360px;
+    background-position:-360px 0;
+}
+    div#box>div:nth-child(5){
+        left:480px;
+    background-position:-480px 0;
+}
+    div#box>div:nth-child(6){
+        left:600px;
+    background-position:-600px 0;
+}
+    div#box>div:nth-child(7){
+        left:720px;
+    background-position:-720px 0;
+}
+    div#box>div:nth-child(8){
+        left:840px;
+    background-position:-840px 0;
+
+}        
+.shake{
+        animation:shake .5s ease-in-out;
+    }
+@keyframes shake{
+    0%{top:0px}
+    20%{top:100px}
+    50%{top:-70px}
+    65%{top:40px}
+    80%{top:-20px}
+    90%{top:10px}
+    100%{top:0px}
+}
+
+/*图片*/
+#images{
+    width:1150px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#images>a{
+    display: inline-block;
+    margin-top:10px;
+}
+#images img{
+    width:250px;
+}
+#images>a:hover{
+    opacity: 0.5;
+}
+/****/
+#images .desc{
+    width:250px;
+    height: 170px;
+    overflow: hidden;
+    transition:opacity 10s linear;
+    margin-top:10px;
+    margin-bottom:10px;
+    position:relative;
+    top:0;
+    left:0;
+}
+#images .desc .mask{
+    /* display: none;  */
+    position: absolute;
+    width:0px;
+    height:170px;
+    opacity:0.6;
+    transition:all 2s;
+    background: rgba(0, 0,0,0.5);
+}
+ #images .desc:hover .mask{
+    z-index: 1;
+    width:250px;
+} 
+.desc a{
+    display:inline-block;
+}
+#images .desc a img{
+    vertical-align: bottom;
+    transition:all 0.3s linear;
+}
+#images .detail{
+    /* border:1px solid red; */
+    width:150px;
+    height:50px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-75px;
+    margin-top:-25px;
+    z-index: 2;
+}
+
+#images .detail p{
+    display:block;
+    position:absolute;
+    transition: all 1s linear;
+}
+#images .detail p.ptop{
+    top:0px;
+    right:-0px;
+    width:0;
+    height: 2px;
+    background: #fff
+}
+#images .desc:hover p.ptop{
+    /* border:1px solid #fff; */
+    width:160px;
+    transition: all 1s;
+}
+#images .detail p.pright{
+    bottom:0px;
+    right:0px;
+    height:0px;
+    width:2px;
+    background: #fff
+}
+#images .desc:hover p.pright{
+    /* border:1px solid #fff; */
+    height:60px;
+    transition: all 1s;
+}
+#images .detail p.pbottom{
+    bottom:0px;
+    left:0px;
+    width:0;
+    height: 2px;
+    background: #fff
+}
+#images .desc:hover p.pbottom{
+    /* border:1px solid #fff; */
+    width:160px;
+    transition: all 1s;
+}
+#images .detail p.pleft{
+    top:0px;
+    left:0px;
+    height:0px;
+    width:2px;
+    background: #fff
+}
+#images .desc:hover p.pleft{
+    /* border:1px solid #fff; */
+    height:60px;
+    transition: all 1s;
+}
+#images .detail a{
+    position: relative;
+    top:9px;
+    left:40px;   
+    color:#c08e1d;
+    font-size:1.2rem;
+    font-weight:bold;
+    z-index: 20;
+    /* opacity: 0;  */
+    display: none;
+}

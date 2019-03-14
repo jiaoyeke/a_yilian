@@ -1,0 +1,228 @@
+ #header{
+    width:100%;
+    background: #e1e1e1;
+}
+#header .scoll{
+    width:100%;
+    height:118px;
+    position: relative;
+    background-color:#f7f6f4;
+}
+#header .container{
+    width:100%;
+    background:transparent;
+    padding:30px 0;
+    position: absolute;
+    top:0;
+    left:0;
+}
+/********************固定导航栏**************************/
+#header .container.move{
+    position:fixed;
+    top:0;
+    background:rgba(51,51,51,0.3);
+    transition:all 0.5s linear;
+    z-index: 999;
+}
+#header .container .fixed{
+    width:1200px;
+    margin:0 auto;
+    position: relative;
+    top:0;left:0;
+}
+#header .container  a.logo{
+    margin-left:20px;
+    display: inline-block;
+    width:271px;
+    height:54px;
+    background:url("../img/index/logo.png") no-repeat center center;
+}
+#header .container>.fixed>.search{
+    display:inline-block;
+    position: absolute;
+    width:300px;
+    top:14px;
+    right:20px;
+}
+#header .container>.fixed>.search>input{
+    width:256px;
+    outline: none;
+    border:1px solid #000;
+    padding:0px 6px;
+    height:30px;
+    box-sizing: border-box;
+    position: relative;
+}
+#header .container>.fixed>.search>a{ 
+    display:inline-block;
+    position: absolute; top:0px;
+}
+#header .container>.fixed>.search>a>img{
+     vertical-align:bottom; 
+}
+#header #about-me>span>b{
+    display: inline-block;
+    width:120px;
+    height:16px;
+    line-height:16px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    color:#c39329;
+    font-weight:normal;
+    position: relative;
+    top:4px;
+    left:4px;
+}
+#header #about-me>a:hover{
+    color:#c39329 !important;
+}
+/***********导航栏************/
+#header .nav{
+     box-sizing: border-box;
+     padding:0 100px;
+     text-align:center;
+     width:1200px;
+     position: relative;
+     top:0;left:0;
+     margin:0 auto;
+     /* border:1px solid red; */
+ }
+#header .nav ul>li{
+    float:left;
+    text-align:center;
+    padding:5px 0px; 
+    width:150px;
+    box-sizing: border-box;
+    position:relative; 
+}
+#header .nav ul>li>a{
+    display: block;
+    font-size:16px;
+    font-weight:bold;
+    color:#000;
+    overflow:hidden;
+    font-family: arial;
+
+}
+#header .nav ul>li>a>i{
+    font-style: normal;
+    height:30px;
+    font-size:14px;
+    line-height:30px;
+}
+#header .nav ul>li>a>span{
+    display:none;
+    color:#000;
+    font-family: "微软雅黑";
+    height:30px;
+    line-height: 30px;
+}
+#header>.nav>div{
+    position: absolute;
+    top:8px;
+    right:100px;  
+}
+#header>.nav>div>a{
+    color:#000;
+    font-style:italic;
+}
+#header>.nav>div>a:visited{
+    color:#000;
+    font-style: normal;
+}
+#header #about-me{
+    position:absolute;
+    right:20px;
+    top:-25px;
+}
+#header #about-me a{
+    display: inline-block;
+    font-size:14px;
+    color:#000;
+    padding-left:3px;
+
+}
+/***********导航栏中的下拉菜单*************/
+#header .nav ul>li[data-toggle=dropdown]{
+    position:relative;
+}
+#header .nav ul>li[data-toggle=dropdown]>ul{
+    display: none;
+    position: absolute;
+    top:40px;
+    left:0;
+    z-index:999;
+    width:150px;
+    background:rgba(201,77,58,0.9);
+}
+#header .nav ul>li[data-toggle=dropdown]>ul>li:hover{
+    background:rgba(238, 136, 120, 0.9);
+}
+#header .nav ul>li[data-toggle=dropdown]>ul>li>a{
+    font-size:15px;
+    font-weight: normal;
+}
+
+
+/***/
+/*****提示信息样式******/
+#headerPop.show{
+    width:300px;
+    height:150px;
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left:-150px;
+    z-index: 1001;
+    /* border:2px solid #c4952b; */
+    border-radius: 2px;
+    background:#fff;
+    box-shadow: 0px 0px 5px #393939;
+    /* display:none; */
+    transition: all 0.5s linear;
+    margin-top:0px;
+}
+#headerPop.hide{
+    width:300px;
+    height:150px;
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-top:-152px;
+    margin-left:-150px;
+    transition: all 0.5s linear;
+}
+#headerPop>a{
+    display: inline-block;
+    width: 55px;
+    height:30px;
+    /* border:1px solid red; */
+    color:#eee;
+    background:#c39329;
+    text-align: center;
+    line-height: 30px;
+    margin-left:208px;
+    margin-top:87px;
+    box-shadow: 0px 0px  3px #393939;
+}
+#headerPop>p{
+    width:220px;
+    position: absolute;
+    top:30%;
+    left:50%;
+    margin-left:-110px;
+    text-align: center;
+    /* color:#c4952b; */
+    
+}
+#headerMask{
+    position: absolute;
+    top:0;
+    left:0;
+    /* background: #333; */
+    width: 100%;
+    height:100%;
+    display: none;
+    z-index: 1000;
+}

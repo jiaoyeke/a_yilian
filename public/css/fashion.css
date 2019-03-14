@@ -1,0 +1,158 @@
+/*************新闻导航部分*************/
+#fashion-news{
+    width:1200px;
+    margin:10px auto;
+}
+#fashion-news .right-content{
+    width:750px;
+    position: relative;
+}
+#fashion-news .right-content .carousel .outer{
+    width:580px;
+    overflow: hidden;
+    margin:0 85px;
+    height:435px;
+}
+#fashion-news .right-content .carousel>a{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    margin:0 20px;
+    position: absolute;
+    top:217px;
+}
+#fashion-news .right-content .carousel a.next{
+    right:0;
+}
+#fashion-news .right-content .carousel ul{
+    overflow: hidden;
+    width:1740px;
+    transition: all .5s linear;
+}
+#fashion-news .right-content .carousel ul>li{
+    float:left;
+}
+#fashion-news .right-content .carousel ul>li>img{
+    vertical-align:middle;
+    width:580px;
+}
+#fashion-news .right-content .carousel a:first-child{
+    background-image: url("../img/fashion/prev.jpg");
+}
+#fashion-news .right-content .carousel a~a {
+    background-image: url("../img/fashion/next.jpg");
+}
+/***********点赞收藏部分***************/
+#fashion-news .icon{
+    width:740px;
+    padding:15px;
+}
+#fashion-news .icon>i{
+    width:19px;
+    height:15px;
+    display: inline-block;
+    margin:0 5px;
+}
+#fashion-news .icon>i:first-child{
+    background-image: url("../img/fashion/ico_1.png");
+    margin-left:510px;
+}
+#fashion-news .icon>i:nth-child(3){
+    background-image: url("../img/fashion/ico_2.png");
+}
+#fashion-news .icon>span{
+    font-family: Corbel;
+    font-size:18px;
+    display: inline-block;
+    height:20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+/**************右侧推荐**************/
+#fashion-news .aside{
+    width:350px;
+    height:500px;
+    overflow: hidden; 
+    margin-bottom: 20px;
+    color: #ca8a65;
+}
+#fashion-news .aside dl{
+    height:78px;
+    position: relative;
+    margin-bottom:20px;
+}
+#fashion-news .aside dd{
+    font-size:16px;
+    font-weight:bold;
+    margin-left:119px;
+}
+#fashion-news .aside dt>i{
+    display: inline-block;
+    width:33px;
+    height:14px;
+    background:url("../img/fashion/ico_more.jpg");
+    position: absolute;
+    bottom:0;
+    right:0px;
+}
+
+#fashion-news .fashion-content{
+    width:740px;
+    /* border:1px solid red; */
+    text-align: center;
+}
+#fashion-news .fashion-content img{
+    margin-left:6px;
+    vertical-align:bottom;
+    width:720px;
+}
+.fashion-content p,.fashion-content pre{
+    text-align: center;
+    font-size: 14px;
+    color:#aa521f;
+    font-style: italic;
+    margin:10px 0;
+    font-family: "微软雅黑"
+}
+.fashion-content h3{
+    background:#aa521f;
+    padding:3px;
+    color:#fff;
+    font-size:18px;
+    width:200px;
+    margin:0 20px;
+    font-weight:normal;
+    border-radius: 3px;
+    font-style:italic;
+    margin-top:20px;
+}
+.fashion-content h4{
+    color:#c96c36;
+    margin:20px;
+    width:200px;
+    text-align: left;
+    margin-top:5px;
+    font-style: italic;
+}
+.fashion-content h2{
+    color: #aa521f;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px;
+    text-align: center;
+}
+/******totop*****/
+#totop{
+    position:fixed;
+    right:0;
+    bottom:100px;
+    width:40px;
+    height:40px;
+    background:#000;
+    color:#fff;
+    display:none;
+}
+#totop:hover{
+    background: #c4952a;
+}
